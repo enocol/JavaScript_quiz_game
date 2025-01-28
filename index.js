@@ -101,3 +101,25 @@ function startGame() {
   });
   loadQuestion();
 }
+
+// Check Answer Function
+function checkAnswer(selected) {
+  const question = questions[currentQuestionIndex];
+  const correct = question.correct;
+
+  if (selected === correct) {
+    score++;
+    showModal(true, question.explanation);
+  } else {
+    showModal(false, question.explanation);
+  }
+
+  currentQuestionIndex++;
+  questionNumber++;
+
+  if (currentQuestionIndex < questions.length) {
+    loadQuestion();
+  } else {
+    showScore();
+  }
+}
