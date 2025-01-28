@@ -78,7 +78,7 @@ function loadQuestion() {
             (option, index) =>
               `<div class="Container">
               <div class="row justify-content-center">
-               <div class="col-12 col-md-6 col-lg-4 p-0">
+               <div class="col-12 col-md-6 col-lg-4 p-0 mt-3">
                  <button type="button" class="btn btn-primary" onclick="checkAnswer(${index})">${option}</button>
                </div>
                  
