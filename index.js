@@ -1,3 +1,11 @@
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+    [array[i], array[randomIndex]] = [array[randomIndex], array[i]];
+  }
+  return array;
+}
+
 // questions array
 
 const questions = [
@@ -84,6 +92,12 @@ function loadQuestion() {
 // Start Game Function
 function startGame() {
   const startButton = document.getElementById("start");
-  startButton.style.display = "none";
+  startButton.innerText = "Restart Game";
+  startButton.addEventListener("click", () => {
+    shuffleArray(questions);
+    score = 0;
+    questionNumber = 1;
+    loadQuestion();
+  });
   loadQuestion();
 }
