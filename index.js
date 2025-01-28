@@ -97,6 +97,7 @@ function startGame() {
     shuffleArray(questions);
     score = 0;
     questionNumber = 1;
+    currentQuestionIndex = 0;
     loadQuestion();
   });
   loadQuestion();
@@ -122,4 +123,31 @@ function checkAnswer(selected) {
   } else {
     showScore();
   }
+}
+
+// Show Score Function
+function showScore() {
+  const startButton = document.getElementById("start");
+  startButton.style.display = "none";
+  const app = document.getElementById("js-quiz");
+  app.innerHTML = `
+      <div>
+        <p>Thanks for playing</p>
+        <h2>Your Score: ${score}/${questions.length}</h2>
+        <button class="btn btn-success" onclick="restartGame()">Restart</button>
+      </div>
+    `;
+}
+
+// Show Modal Function
+function showModal(isCorrect, explanation) {
+  const modalTitle = document.getElementById("exampleModalLabel");
+  const explantion = document.getElementById("modal-explanation");
+  const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+
+  modalTitle.innerHTML = isCorrect
+    ? `<h1>Correct! 🎉</h1>`
+    : `<h1>Incorrect! 😢</h1>`;
+  explantion.textContent = explanation;
+  modal.show();
 }
