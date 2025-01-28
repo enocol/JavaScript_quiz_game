@@ -72,7 +72,7 @@ function loadQuestion() {
 
   app.innerHTML = `
     
-          <h3>${question.question}</h3>
+          <h2>${question.question}</h2>
         <div>  ${question.options
           .map(
             (option, index) =>
