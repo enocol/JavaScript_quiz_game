@@ -92,7 +92,7 @@ function loadQuestion() {
 // Start Game Function
 function startGame() {
   const startButton = document.getElementById("start");
-  startButton.innerText = "Restart Game";
+  startButton.innerText = "Restart";
   startButton.addEventListener("click", () => {
     shuffleArray(questions);
     score = 0;
