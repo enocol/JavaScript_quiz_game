@@ -81,4 +81,9 @@ function loadQuestion() {
       `;
 }
 
-loadQuestion();
+// Start Game Function
+function startGame() {
+  const startButton = document.getElementById("start");
+  startButton.style.display = "none";
+  loadQuestion();
+}
