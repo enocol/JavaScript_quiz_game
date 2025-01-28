@@ -24,3 +24,10 @@ body {
   height: 65vh;
   border: 1px solid red;
 }
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}

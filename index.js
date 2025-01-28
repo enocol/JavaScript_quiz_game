@@ -80,3 +80,5 @@ function loadQuestion() {
           .join(" ")}</div>
       `;
 }
+
+loadQuestion();
