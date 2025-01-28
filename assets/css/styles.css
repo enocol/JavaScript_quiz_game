@@ -21,7 +21,7 @@ body {
   background: white;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 65vh;
+  height: 70vh;
   border: 1px solid red;
 }
 
@@ -38,4 +38,11 @@ h1 {
   font-family: "Lobster", cursive;
   color: goldenrod;
   font-weight: 400;
+}
+
+h2 {
+  margin-top: 0;
+  font-family: "Macondo", cursive;
+  background-color: #333;
+  color: white;
 }
