@@ -17,7 +17,7 @@ const questions = [
       "To define a new variable",
       "To bind a function",
     ],
-    correct: 1,
+    correct: "To refer to the current object",
     explanation:
       "The `this` keyword refers to the object it belongs to, typically the current instance.",
   },
@@ -25,14 +25,14 @@ const questions = [
     question:
       "Which method is used to add elements to the end of an array in JavaScript?",
     options: ["push()", "pop()", "shift()", "unshift()"],
-    correct: 0,
+    correct: "push()",
     explanation:
       "The `push()` method adds one or more elements to the end of an array.",
   },
   {
     question: "Which company developed JavaScript?",
     options: ["Microsoft", "Netscape", "Google", "IBM"],
-    correct: 1,
+    correct: "Netscape",
     explanation: "Netscape developed JavaScript in the mid-1990s.",
   },
   {
@@ -43,14 +43,14 @@ const questions = [
       "Not a Null",
       "Numeric and Non-numeric",
     ],
-    correct: 0,
+    correct: "Not a Number",
     explanation:
       "`NaN` stands for 'Not a Number' and represents invalid numeric computations.",
   },
   {
     question: "Which of the following is NOT a JavaScript data type?",
     options: ["Number", "String", "Float", "Boolean"],
-    correct: 2,
+    correct: "Float",
     explanation:
       "`Float` is not a data type in JavaScript; it is a subtype of Number.",
   },
@@ -67,13 +67,15 @@ function loadQuestion() {
   // get the app element
   const app = document.getElementById("js-quiz");
   const question = questions[currentQuestionIndex];
+  const opt = question.options;
+  const shuffle = shuffleArray(opt);
   const questionNumberElement = document.getElementById("questionNumber");
   questionNumberElement.innerHTML = `Question ${questionNumber}`;
 
   app.innerHTML = `
     
           <h2>${question.question}</h2>
-        <div>  ${question.options
+        <div>  ${shuffle
           .map(
             (option, index) =>
               `<div class="Container">
@@ -91,6 +93,7 @@ function loadQuestion() {
 
 // Start Game Function
 function startGame() {
+  const info = document.getElementById("info");
   const startButton = document.getElementById("start");
   startButton.innerText = "Restart";
   startButton.addEventListener("click", () => {
@@ -99,6 +102,10 @@ function startGame() {
     questionNumber = 1;
     currentQuestionIndex = 0;
     loadQuestion();
+    info.innerHTML = `<span>Game Restarted, your score is has been reset to <span>${score}</span> <span>`;
+    setInterval(() => {
+      info.innerText = "";
+    }, 5000);
   });
   loadQuestion();
 }
@@ -108,7 +115,7 @@ function checkAnswer(selected) {
   const question = questions[currentQuestionIndex];
   const correct = question.correct;
 
-  if (selected === correct) {
+  if (question.options.indexOf(correct) === selected) {
     score++;
     showModal(true, question.explanation);
   } else {
