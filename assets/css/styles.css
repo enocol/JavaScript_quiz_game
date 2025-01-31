@@ -75,3 +75,10 @@ footer {
   background: #333;
   height: 30px;
 }
+
+/* media queries */
+@media (min-width: 768px) {
+  #js-quiz {
+    height: 70vh;
+  }
+}
