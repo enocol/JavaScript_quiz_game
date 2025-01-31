@@ -61,6 +61,7 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 let questionNumber = 1;
+shuffleArray(questions);
 
 // Load Question Function
 function loadQuestion() {
@@ -157,4 +158,13 @@ function showModal(isCorrect, explanation) {
     : `<h1>Incorrect! 😢</h1>`;
   explantion.textContent = explanation;
   modal.show();
+}
+
+// Restart Game Function
+function restartGame() {
+  shuffleArray(questions);
+  currentQuestionIndex = 0;
+  score = 0;
+  questionNumber = 1;
+  loadQuestion();
 }
