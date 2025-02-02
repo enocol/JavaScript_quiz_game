@@ -41,6 +41,11 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header p {
@@ -61,8 +66,9 @@ h2 {
   margin-top: 0;
   margin-bottom: 20px;
   font-family: "Macondo", cursive;
+  font-weight: 700;
   background-color: #333;
-  color: white;
+  color: skyblue;
 }
 
 .container-fluid button {
