@@ -28,14 +28,13 @@ body {
 #js-quiz {
   background: #f4f4f4;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 70vh;
+  height: 50vh;
   width: 100%;
 }
 
 header {
   background: #333;
   width: 100%;
-  border: 1px solid red;
   height: 300px;
   padding-top: 10px;
 }
@@ -71,10 +70,12 @@ h2 {
 
 #info {
   height: 30px;
+  line-height: 1.1;
   color: red;
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
+  font-family: "Lato", sans-serif;
 }
 
 .score-container button {
@@ -88,7 +89,6 @@ footer {
   left: 0;
   background: #333;
   height: 55px;
-  border: 1px solid red;
 }
 
 /* .footer-content {
