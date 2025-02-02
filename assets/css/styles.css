@@ -85,17 +85,29 @@ footer {
   color: skyblue;
   position: fixed;
   bottom: 0;
+  left: 0;
   background: #333;
   height: 55px;
+  border: 1px solid red;
 }
 
-.footer-content {
+/* .footer-content {
   padding: 0;
-}
+} */
 
 .footer-content p {
   margin-bottom: 0;
   padding: 0;
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal-header button {
+  width: 20%;
 }
 
 /* media queries */
@@ -114,6 +126,7 @@ footer {
 
   footer p {
     margin-bottom: 0;
+    padding: 0;
   }
 
   .score-container button {
@@ -124,6 +137,13 @@ footer {
 @media (max-width: 576px) {
   #js-quiz {
     height: 85vh;
+  }
+
+  .container-fluid button {
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    font-size: 16px;
   }
 
   footer {
