@@ -15,26 +15,35 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  border: 3px solid green;
+  background: #f4f4f4;
 }
 
 /* main content question style */
+
+.main-content {
+  padding: 0;
+  margin: 0;
+}
+
 #js-quiz {
-  width: 100%;
   background: #f4f4f4;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  height: 100vh;
+  height: 70vh;
+  width: 100%;
 }
 
 header {
-  background: #49299231;
-  padding: 10px;
+  background: #333;
+  width: 100%;
+  border: 1px solid red;
+  height: 300px;
+  padding-top: 10px;
 }
 
 header p {
-  margin: 10px;
   font-family: "Macondo", cursive;
   font-size: 20px;
+  color: skyblue;
 }
 
 h1 {
@@ -47,7 +56,7 @@ h1 {
 
 h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   font-family: "Macondo", cursive;
   background-color: #333;
   color: white;
@@ -61,23 +70,38 @@ h2 {
 }
 
 #info {
-  height: 20px;
-  color: wheat;
+  height: 30px;
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.score-container button {
+  width: 40%;
 }
 
 footer {
-  color: white;
+  color: skyblue;
   position: fixed;
   bottom: 0;
-  width: 100%;
   background: #333;
-  height: 30px;
+  height: 55px;
+}
+
+.footer-content {
+  padding: 0;
+}
+
+.footer-content p {
+  margin-bottom: 0;
+  padding: 0;
 }
 
 /* media queries */
 @media (min-width: 768px) {
   #js-quiz {
-    height: 80vh;
+    height: 60vh;
   }
 
   footer {
@@ -85,9 +109,54 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   footer p {
     margin-bottom: 0;
+  }
+
+  .score-container button {
+    width: 10%;
+  }
+}
+
+@media (max-width: 576px) {
+  #js-quiz {
+    height: 85vh;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #js-quiz {
+    height: 85vh;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #js-quiz {
+    height: 85vh;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #js-quiz {
+    height: 85vh;
+  }
+
+  footer {
+    width: 100%;
   }
 }

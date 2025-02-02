@@ -106,7 +106,7 @@ function startGame() {
     info.innerHTML = `<span>Game Restarted, your score is has been reset to <span>${score}</span> <span>`;
     setInterval(() => {
       info.innerText = "";
-    }, 5000);
+    }, 10000);
   });
   loadQuestion();
 }
@@ -139,7 +139,7 @@ function showScore() {
   startButton.style.display = "none";
   const app = document.getElementById("js-quiz");
   app.innerHTML = `
-      <div>
+      <div class="score-container">
         <p>Thanks for playing</p>
         <h2>Your Score: ${score}/${questions.length}</h2>
         <button class="btn btn-success" onclick="restartGame()">Restart</button>
