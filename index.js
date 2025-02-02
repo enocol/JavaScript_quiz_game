@@ -65,13 +65,12 @@ shuffleArray(questions);
 
 // Load Question Function
 function loadQuestion() {
-  // get the app element
   const app = document.getElementById("js-quiz");
   const question = questions[currentQuestionIndex];
   const opt = question.options;
   const shuffle = shuffleArray(opt);
   const questionNumberElement = document.getElementById("questionNumber");
-  questionNumberElement.innerHTML = `Question ${questionNumber}`;
+  questionNumberElement.innerHTML = `Question ${questionNumber} of ${questions.length}`;
 
   app.innerHTML = `
     
@@ -108,6 +107,7 @@ function startGame() {
       info.innerText = "";
     }, 10000);
   });
+
   loadQuestion();
 }
 
@@ -166,5 +166,22 @@ function restartGame() {
   currentQuestionIndex = 0;
   score = 0;
   questionNumber = 1;
+  const info = document.getElementById("info");
+  const startButton = document.getElementById("start");
+  startButton.innerText = "Restart";
+  startButton.style.display = "block";
+  startButton.style.width = "50%";
+  startButton.addEventListener("click", () => {
+    shuffleArray(questions);
+    score = 0;
+    questionNumber = 1;
+    currentQuestionIndex = 0;
+    loadQuestion();
+    info.innerHTML = `<span>Game Restarted, your score is has been reset to <span>${score}</span> <span>`;
+    setInterval(() => {
+      info.innerText = "";
+    }, 10000);
+  });
+
   loadQuestion();
 }
