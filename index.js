@@ -102,7 +102,7 @@ function startGame() {
     questionNumber = 1;
     currentQuestionIndex = 0;
     loadQuestion();
-    info.innerHTML = `<span>Game Restarted, your score is has been reset to <span>${score}</span> <span>`;
+    info.innerHTML = `<p>Game Restarted, your score is has been reset to <span class="score">${score}</span> </p>`;
     setInterval(() => {
       info.innerText = "";
     }, 10000);
@@ -142,7 +142,7 @@ function showScore() {
       <div class="score-container">
         <p>Thanks for playing</p>
         <h2>Your Score: ${score}/${questions.length}</h2>
-        <button class="btn btn-success" onclick="restartGame()">Restart</button>
+        <button class="btn btn-success restartButton" onclick="restartGame()">Restart</button>
       </div>
     `;
 }
@@ -170,17 +170,18 @@ function restartGame() {
   const startButton = document.getElementById("start");
   startButton.innerText = "Restart";
   startButton.style.display = "block";
-  startButton.style.width = "80%";
+  // startButton.style.width = "80%";
   startButton.addEventListener("click", () => {
     shuffleArray(questions);
     score = 0;
     questionNumber = 1;
     currentQuestionIndex = 0;
+    info.innerHTML = `<p>Gameeee Restarted, your score is has been reset to <span class="score">${score}</span> </p>`;
     loadQuestion();
-    info.innerHTML = `<span>Game Restarted, your score is has been reset to <span>${score}</span> <span>`;
+
     setInterval(() => {
       info.innerText = "";
-    }, 10000);
+    }, 100000);
   });
 
   loadQuestion();

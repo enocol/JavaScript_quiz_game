@@ -54,6 +54,10 @@ header p {
   color: skyblue;
 }
 
+#start {
+  width: 100%;
+}
+
 h1 {
   margin-bottom: 0;
   margin-top: 10px;
@@ -76,20 +80,29 @@ h2 {
   padding: 10px;
   width: 90%;
   font-size: 16px;
+  font-family: "Inter", sans-serif;
 }
 
 #info {
-  height: 30px;
+  height: 40px;
   line-height: 1.1;
   color: red;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   margin-bottom: 5px;
-  font-family: "Lato", sans-serif;
+  font-family: "Macondo", cursive;
+  padding: 10px;
 }
 
 .score-container button {
-  width: 40%;
+  width: 80%;
+}
+
+#info .score {
+  color: green;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
 }
 
 footer {
@@ -125,9 +138,14 @@ footer {
 }
 
 /* media queries */
-@media (min-width: 768px) {
+
+@media (max-width: 768px) {
   #js-quiz {
-    height: 60vh;
+    height: 85vh;
+  }
+
+  #start {
+    width: 45%;
   }
 
   footer {
@@ -144,20 +162,17 @@ footer {
   }
 
   .score-container button {
-    width: 10%;
+    width: 50%;
   }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 769px) {
   #js-quiz {
     height: 85vh;
   }
 
-  .container-fluid button {
-    margin: 5px;
-    padding: 10px;
-    width: 90%;
-    font-size: 16px;
+  #start {
+    width: 35%;
   }
 
   footer {
@@ -165,29 +180,17 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   #js-quiz {
-    height: 85vh;
+    height: 60vh;
   }
 
-  footer {
-    width: 100%;
-  }
-}
-
-@media (max-width: 992px) {
-  #js-quiz {
-    height: 85vh;
+  .score-container button {
+    width: 40%;
   }
 
-  footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #js-quiz {
-    height: 85vh;
+  #start {
+    width: 30%;
   }
 
   footer {
