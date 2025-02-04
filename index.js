@@ -176,7 +176,7 @@ function restartGame() {
     score = 0;
     questionNumber = 1;
     currentQuestionIndex = 0;
-    info.innerHTML = `<p>Gameeee Restarted, your score is has been reset to <span class="score">${score}</span> </p>`;
+    info.innerHTML = `<p>Game Restarted, your score is has been reset to <span class="score">${score}</span> </p>`;
     loadQuestion();
 
     setInterval(() => {
