@@ -54,6 +54,50 @@ const questions = [
     explanation:
       "`Float` is not a data type in JavaScript; it is a subtype of Number.",
   },
+  {
+    question:
+      "Which keyword is used to declare a constant variable in JavaScript?",
+    options: ["let", "var", "const", "static"],
+    correct: "const",
+    explanation:
+      "The `const` keyword is used to declare a constant variable in JavaScript, meaning its value cannot be reassigned.",
+  },
+  {
+    question: "What will `typeof null` return in JavaScript?",
+    options: ["null", "object", "undefined", "string"],
+    correct: "object",
+    explanation:
+      "Due to a historical bug in JavaScript, `typeof null` incorrectly returns `'object'` instead of `'null'`.",
+  },
+  {
+    question: "Which operator is used to check both value and type equality?",
+    options: ["==", "===", "!=", "!=="],
+    correct: "===",
+    explanation:
+      "The `===` operator checks both value and type equality, unlike `==`, which performs type coercion.",
+  },
+  {
+    question: "Which of the following is NOT a valid JavaScript loop?",
+    options: ["for", "while", "repeat", "do...while"],
+    correct: "repeat",
+    explanation:
+      "JavaScript does not have a `repeat` loop; however, `do...while` loops exist.",
+  },
+  {
+    question: "Which of the following is NOT a falsy value in JavaScript?",
+    options: ["0", "null", "undefined", "'false'"],
+    correct: "'false'",
+    explanation:
+      "In JavaScript, the string `'false'` is truthy, whereas `0`, `null`, `undefined`, `false`, `NaN`, and `''` are falsy.",
+  },
+  {
+    question:
+      "Which array method is used to create a new array by applying a function to each element?",
+    options: ["forEach()", "filter()", "map()", "reduce()"],
+    correct: "map()",
+    explanation:
+      "The `map()` method creates a new array by applying a function to each element in the original array.",
+  },
 ];
 // more questions can be added to the array; this is just a sample
 
