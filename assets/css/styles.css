@@ -141,6 +141,10 @@ footer {
   width: 100%;
 }
 
+.correct-answer {
+  color: green;
+}
+
 .socials {
   display: flex;
   justify-content: space-around;

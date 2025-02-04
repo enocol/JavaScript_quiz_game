@@ -158,7 +158,7 @@ function showModal(isCorrect, explanation) {
     ? `<h1>Correct! 🎉</h1>`
     : `<div>
         <h1>Incorrect! 😢</h1>
-        <p>The correct answer is: <strong>${question.correct}</strong></p>
+        <p>The correct answer is: <strong class="correct-answer">${question.correct}</strong></p>
     </div>`;
   explantion.textContent = explanation;
   modal.show();
