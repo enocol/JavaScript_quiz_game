@@ -170,7 +170,6 @@ function restartGame() {
   const startButton = document.getElementById("start");
   startButton.innerText = "Restart";
   startButton.style.display = "block";
-  // startButton.style.width = "80%";
   startButton.addEventListener("click", () => {
     shuffleArray(questions);
     score = 0;
