@@ -149,13 +149,17 @@ function showScore() {
 
 // Show Modal Function
 function showModal(isCorrect, explanation) {
+  const question = questions[currentQuestionIndex];
   const modalTitle = document.getElementById("exampleModalLabel");
   const explantion = document.getElementById("modal-explanation");
   const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
 
   modalTitle.innerHTML = isCorrect
     ? `<h1>Correct! 🎉</h1>`
-    : `<h1>Incorrect! 😢</h1>`;
+    : `<div>
+        <h1>Incorrect! 😢</h1>
+        <p>The correct answer is: <strong>${question.correct}</strong></p>
+    </div>`;
   explantion.textContent = explanation;
   modal.show();
 }
