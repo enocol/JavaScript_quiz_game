@@ -1,8 +1,5 @@
 <h1 align='center'> Task Manager </h1>
 
-View live project here:
-https://enocol.github.io/JavaScript_quiz_game/
-
 Welcome to the JavaScript quiz game website. The purpose of this site is to enable JavaScript learners to play a game by answering questions in Javascript and see thier score at the end of the game. Each time you start/restart a game, the questions are reshuffled and the answers are reordered to see if you still answer correctly. The explanation of the correct answer is always given after each response in order to enable continued learning.
 
 ## Index
@@ -86,6 +83,10 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 
 ## Testing
 
+- html and css validation
+
+# HTML Validation
+
 ## Manual Testing
 
 | **TEST**            | **ACTION**           | **EXPECTATION**                                       | **RESULT**         |
@@ -97,6 +98,9 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 | Page Responsiveness | View on Mobile phone | To fit nicely and be usable                           | Worked as espected |
 
 ## Deployment
+
+View live project here:
+https://enocol.github.io/JavaScript_quiz_game/
 
 To deploy this page to github page from its repository, the following steps were taken:
 
