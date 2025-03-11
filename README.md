@@ -28,13 +28,37 @@ As a user, I want to:
 
 ## Features
 
-- The quiz Title
-- A brief discription of the game
-- A Start Button
+- The quiz Title and Start Button
+
+  - <div style="text-align:center">
+    <img src="./assets/images/features/startbutton.png" alt="first page view">
+    </div>
+
 - A restart Button while quiz is running
+  - <div style="text-align:center">
+    <img src="./assets/images/features/question-answers.png" alt="question and answer view">
+    </div>
 - A restart button at the end of the game
-- View score at the end of the game
+  - <div style="text-align:center">
+      <img src="./assets/images/features/endofgame.png" alt="end of game view">
+      </div>
+- Modal to reporting action after selecting answer
+
+  - <div style="text-align:center">
+        <img src="./assets/images/features/modalpage.png" alt="first view">
+        </div>
+
+  - <div style="text-align:center">
+
+    <img src="./assets/images/features/incorrect-answer-modal.png" alt="first view">
+    </div>
+
 - A footer with copyright information
+
+  - <div style="text-align:center">
+
+    <img src="./assets/images/features/footer.png" alt="first view">
+    </div>
 
 ## Design
 
