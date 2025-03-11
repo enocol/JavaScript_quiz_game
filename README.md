@@ -107,9 +107,15 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 
 ## Testing
 
-- html and css validation
+# html and css validation
 
-# HTML Validation
+- HTML Validation
+
+- <div style="text-align:center">
+  <img src="./assets/images/features/htmlvalidation.png" alt="mobile view">
+  </div>
+
+- css validation
 
 ## Manual Testing
 
