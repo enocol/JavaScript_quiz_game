@@ -1,4 +1,4 @@
-<h1 align='center'> Task Manager </h1>
+<h1 align='center'> JavaScript Quiz Game </h1>
 
 Welcome to the JavaScript quiz game website. The purpose of this site is to enable JavaScript learners to play a game by answering questions in Javascript and see thier score at the end of the game. Each time you start/restart a game, the questions are reshuffled and the answers are reordered to see if you still answer correctly. The explanation of the correct answer is always given after each response in order to enable continued learning.
 
