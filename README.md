@@ -116,6 +116,9 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
   </div>
 
 - css validation
+- <div style="text-align:center">
+  <img src="./assets/images/cssvalidation.png" alt="mobile view">
+  </div>
 
 ## Manual Testing
 
@@ -134,9 +137,21 @@ https://enocol.github.io/JavaScript_quiz_game/
 
 To deploy this page to github page from its repository, the following steps were taken:
 
-- Click on settings in the github repo
-- On the left hand site click on pages
-- Select the source and branch you want to deploy from
+## Enable GitHub Pages on Your Repository
+
+# Navigate to GitHub Pages Settings:
+
+- On your GitHub repository page, click on the Settings tab at the top of your repository.
+  Scroll down to the GitHub Pages Section:
+
+- In the "GitHub Pages" section, you’ll see a dropdown under Source. Select main (or master) as the branch to deploy from.
+- For folder: Select / (root) if your index.html is in the root of your repository (i.e., not inside any subfolders).
+
+## Save Settings:
+
+- Click Save or Save Changes. GitHub will now start deploying your site.
+- Wait for Deployment to Complete
+- In a few minutes: GitHub will automatically deploy your website. This process may take a few minutes.
 
 ## Future Features
 
