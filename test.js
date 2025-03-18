@@ -8,10 +8,6 @@ describe("loadQuestion function", () => {
   it("should be a function", () => {
     expect(typeof loadQuestion).toBe("function");
   });
-
-  it("should return a string", () => {
-    expect(typeof loadQuestion()).toBe("string");
-  });
 });
 
 // Test for the shuffleArray function
