@@ -1,5 +1,6 @@
 name: Lint JavaScript
 on: [push, pull_request]
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -10,7 +11,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "16"
-      - name: Install ESLint
-        run: npm install -g eslint
+      - name: Install Dependencies
+        run: npm install
       - name: Run ESLint
-        run: eslint assets/js/ --fix
+        run: npx eslint assets/js/ --fix
