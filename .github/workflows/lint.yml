@@ -1,21 +1,16 @@
 name: Lint JavaScript
-
 on: [push, pull_request]
-
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "17.0"
-
-      - name: Install JSHint
-        run: npm install -g jshint
-
-      - name: Run JSHint
-        run: jshint assets/js/  --config .jshintrc
+          node-version: "16"
+      - name: Install ESLint
+        run: npm install -g eslint
+      - name: Run ESLint
+        run: eslint assets/js/ --fix
