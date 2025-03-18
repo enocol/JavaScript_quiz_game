@@ -4,9 +4,11 @@
     "browser": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:es/recommended"],
+  "plugins": ["es"],
   "rules": {
     "no-unused-vars": "warn",
+    "constructor-super": "off",
     "no-unexpected-multiline": "off"
   }
 }
