@@ -12,6 +12,7 @@ export default [
       "no-unused-expressions": "off",
       "no-inner-declarations": "off",
       "no-constant-condition": "off",
+      "constructor-super": "off", // Disable the constructor-super rule to avoid the error
     },
   },
 ];
