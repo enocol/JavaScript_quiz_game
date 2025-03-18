@@ -10,4 +10,4 @@ jobs:
         with:
           node-version: "16"
       - run: npm install
-      - run: npx jshint . --esversion=6
+      - run: npx jshint .
