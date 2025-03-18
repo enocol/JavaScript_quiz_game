@@ -112,13 +112,13 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 ## HTML Validation
 
 - <div style="text-align:center">
-  <img src="./assets/images/features/htmlvalidation.png" alt="mobile view">
+  <img src="./assets/images/features/htmlvalidation.png" alt="image">
   </div>
 
 ## css validation
 
 - <div style="text-align:center">
-  <img src="./assets/images/cssvalidation.png" alt="mobile view">
+  <img src="./assets/images/cssvalidation.png" alt="image">
   </div>
 
 ## ESLint
@@ -126,7 +126,7 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 ## Javascript validation
 
 - <div style="text-align:center">
-  <img src="./assets/images/eslint.png" alt="mobile view">
+  <img src="./assets/images/eslint.png" alt="image">
   </div>
 
 ## Manual Testing
@@ -138,6 +138,12 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 | Restart Button      | Button clicked       | Resets the score to zero and back to a new Question 1 | Worked as expected |
 | Page Resposiveness  | Change screen size   | To fit nicely on different screen sizes               | Worked as expected |
 | Page Responsiveness | View on Mobile phone | To fit nicely and be usable                           | Worked as espected |
+
+## Automatic Testing with Jest
+
+- <div style="text-align:center">
+  <img src="./assets/images/jest.png" alt="image">
+  </div>
 
 ## Deployment
 
