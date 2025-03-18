@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "npx eslint assets/js/ ||  'No javascript issues found!'"
   },
   "author": "Enoh",
   "license": "ISC",

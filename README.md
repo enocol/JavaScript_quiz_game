@@ -139,7 +139,7 @@ To deploy this page to github page from its repository, the following steps were
 
 ## Enable GitHub Pages on Your Repository
 
-# Navigate to GitHub Pages Settings:
+## Navigate to GitHub Pages Settings:
 
 - On your GitHub repository page, click on the Settings tab at the top of your repository.
   Scroll down to the GitHub Pages Section:
