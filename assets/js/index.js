@@ -136,7 +136,6 @@ function loadQuestion() {
 }
 
 // Start Game Function
-// was define but not used
 function startGame() {
   const info = document.getElementById("info");
   const startButton = document.getElementById("start");
@@ -234,3 +233,11 @@ function restartGame() {
 
   loadQuestion();
 }
+
+module.exports = {
+  loadQuestion,
+  shuffleArray,
+  checkAnswer,
+  restartGame,
+  startGame,
+};
