@@ -143,6 +143,8 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 
 ## Automatic Testing with Jest
 
+- To run automatic testing, on your local terminal within the project directory, run ** npm run test** and you your results should be similar to the image below
+
 - <div style="text-align:center">
   <img src="./assets/images/jest.png" alt="image">
   </div>
