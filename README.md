@@ -9,7 +9,7 @@ Welcome to the JavaScript quiz game website. The purpose of this site is to enab
 - [Design](#design)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
-- [Notes for testing](#notes)
+- [Notes for testing](#Notes-for-testing)
 - [Deployment](#deployment)
 - [Future Features](#future-features)
 - [Credits](#credits)
@@ -150,7 +150,7 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
   <img src="./assets/images/jest.png" alt="image">
   </div>
 
-# #Notes for testing
+##Notes-for-testing
 ## Manual Testing Principles
  -- Human Involvement – Testers execute test cases manually without scripts or tools.
 
