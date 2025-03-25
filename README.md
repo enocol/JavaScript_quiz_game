@@ -124,7 +124,7 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 ## ESLint
 
 ## Javascript validation
- - To test Javascript with a Linter, on your local terminal, type npm run lint
+ - To test Javascript with a Linter, on your local terminal, type **npm run lint**
    and your results should be similar to the imzge below
 
 - <div style="text-align:center">
