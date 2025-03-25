@@ -162,11 +162,11 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 -- Error Guessing – Experienced testers can predict potential failure points.
 
 When to Use Manual Testing
-✔ Exploratory Testing – When requirements are unclear or evolving.
-✔ Usability Testing – To check user experience, UI consistency, and accessibility.
-✔ Small Projects – When automation is unnecessary due to limited scope.
-✔ Ad-hoc Testing – To quickly check for defects without formal test plans.
-✔ Short-Term Testing – When the time or budget doesn’t justify automation.
+1) Exploratory Testing – When requirements are unclear or evolving.
+2) Usability Testing – To check user experience, UI consistency, and accessibility.
+3) Small Projects – When automation is unnecessary due to limited scope.
+4) Ad-hoc Testing – To quickly check for defects without formal test plans.
+5) Short-Term Testing – When the time or budget doesn’t justify automation.
 
 Automated Testing Principles
 -- Scripted Execution – Uses test scripts or frameworks to run predefined test cases.
