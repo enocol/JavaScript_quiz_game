@@ -150,7 +150,7 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
   <img src="./assets/images/jest.png" alt="image">
   </div>
 
-##Notes-for-testing
+## Notes-for-testing
 ## Manual Testing Principles
  -- Human Involvement – Testers execute test cases manually without scripts or tools.
 
