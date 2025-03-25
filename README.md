@@ -149,6 +149,45 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
   <img src="./assets/images/jest.png" alt="image">
   </div>
 
+# Notes for testing
+## Manual Testing Principles
+ -- Human Involvement – Testers execute test cases manually without scripts or tools.
+
+-- Exploratory Testing – Testers use intuition and experience to find bugs not covered by predefined test cases.
+
+-- Flexibility – Useful for UI/UX evaluation and usability testing.
+
+-- Ad-hoc Testing – Can be performed spontaneously without documentation.
+
+-- Error Guessing – Experienced testers can predict potential failure points.
+
+When to Use Manual Testing
+✔ Exploratory Testing – When requirements are unclear or evolving.
+✔ Usability Testing – To check user experience, UI consistency, and accessibility.
+✔ Small Projects – When automation is unnecessary due to limited scope.
+✔ Ad-hoc Testing – To quickly check for defects without formal test plans.
+✔ Short-Term Testing – When the time or budget doesn’t justify automation.
+
+Automated Testing Principles
+-- Scripted Execution – Uses test scripts or frameworks to run predefined test cases.
+
+-- Repeatability – The same test can be run multiple times with consistent results.
+
+-- Fast Execution – Reduces testing time compared to manual testing.
+
+-- Scalability – Handles large-scale tests, such as load or regression testing.
+
+-- CI/CD Integration – Supports continuous testing in DevOps pipelines.
+
+When to Use Automated Testing
+✔ Regression Testing – To check that new code changes don’t break existing functionality.
+✔ Performance & Load Testing – To simulate multiple users or heavy loads.
+✔ Frequent Code Changes – In Agile and DevOps environments where tests need to be run often.
+✔ Large-Scale Applications – When manual testing is too time-consuming.
+✔ Repetitive Tests – For tasks like login verification, form validation, or API testing.
+
+
+
 ## Deployment
 
 View live project here:
