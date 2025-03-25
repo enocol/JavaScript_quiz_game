@@ -180,11 +180,11 @@ Automated Testing Principles
 -- CI/CD Integration – Supports continuous testing in DevOps pipelines.
 
 When to Use Automated Testing
-✔ Regression Testing – To check that new code changes don’t break existing functionality.
-✔ Performance & Load Testing – To simulate multiple users or heavy loads.
-✔ Frequent Code Changes – In Agile and DevOps environments where tests need to be run often.
-✔ Large-Scale Applications – When manual testing is too time-consuming.
-✔ Repetitive Tests – For tasks like login verification, form validation, or API testing.
+1) Regression Testing – To check that new code changes don’t break existing functionality.
+2) Performance & Load Testing – To simulate multiple users or heavy loads.
+3) Frequent Code Changes – In Agile and DevOps environments where tests need to be run often.
+4) Large-Scale Applications – When manual testing is too time-consuming.
+5) Repetitive Tests – For tasks like login verification, form validation, or API testing.
 
 
 
