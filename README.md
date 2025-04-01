@@ -125,8 +125,9 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 ## ESLint
 
 ## Javascript validation
- - To test Javascript with a Linter, on your local terminal, type **npm run lint**
-   and your results should be similar to the imzge below
+
+- To test Javascript with a Linter, on your local terminal, type **npm run lint**
+  and your results should be similar to the imzge below
 
 - <div style="text-align:center">
   <img src="./assets/images/eslint.png" alt="image">
@@ -134,13 +135,16 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 
 ## Manual Testing
 
-| **TEST**            | **ACTION**           | **EXPECTATION**                                       | **RESULT**         |
-| ------------------- | -------------------- | ----------------------------------------------------- | ------------------ |
-| Start game Button   | Button clicked       | quiz starts                                           | Worked as expected |
-| Answer Buttons      | Button clicked       | opens popup dialog                                    | Worked as expected |
-| Restart Button      | Button clicked       | Resets the score to zero and back to a new Question 1 | Worked as expected |
-| Page Resposiveness  | Change screen size   | To fit nicely on different screen sizes               | Worked as expected |
-| Page Responsiveness | View on Mobile phone | To fit nicely and be usable                           | Worked as espected |
+| **TEST**            | **ACTION**           | **EXPECTATION**                                        | **RESULT**         |
+| ------------------- | -------------------- | ------------------------------------------------------ | ------------------ |
+| Start game Button   | Button clicked       | quiz starts                                            | Worked as expected |
+| Answer Buttons      | Button clicked       | opens popup dialog                                     | Worked as expected |
+| Restart Button      | Button clicked       | Resets the score to zero and back to a new Question 1  | Worked as expected |
+| Page Resposiveness  | Change screen size   | To fit nicely on different screen sizes                | Worked as expected |
+| Page Responsiveness | View on Mobile phone | To fit nicely and be usable                            | Worked as expected |
+| Report correct ans  | Run quiz             | Answer should match the correct key in question Object | Worked as expected |
+| Randon questions    | Rub quiz twice       | Question are shuffed on each quiz rann                 | Worked as expected |
+| Ranswer answers     | Rub quiz twice       | Answer are shuffed on each quiz ran                    | Wored as expected  |
 
 ## Automatic Testing with Jest
 
@@ -151,8 +155,10 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
   </div>
 
 ## Notes-for-testing
+
 ## Manual Testing Principles
- -- Human Involvement – Testers execute test cases manually without scripts or tools.
+
+-- Human Involvement – Testers execute test cases manually without scripts or tools.
 
 -- Exploratory Testing – Testers use intuition and experience to find bugs not covered by predefined test cases.
 
@@ -163,11 +169,12 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 -- Error Guessing – Experienced testers can predict potential failure points.
 
 When to Use Manual Testing
-1) Exploratory Testing – When requirements are unclear or evolving.
-2) Usability Testing – To check user experience, UI consistency, and accessibility.
-3) Small Projects – When automation is unnecessary due to limited scope.
-4) Ad-hoc Testing – To quickly check for defects without formal test plans.
-5) Short-Term Testing – When the time or budget doesn’t justify automation.
+
+1. Exploratory Testing – When requirements are unclear or evolving.
+2. Usability Testing – To check user experience, UI consistency, and accessibility.
+3. Small Projects – When automation is unnecessary due to limited scope.
+4. Ad-hoc Testing – To quickly check for defects without formal test plans.
+5. Short-Term Testing – When the time or budget doesn’t justify automation.
 
 Automated Testing Principles
 -- Scripted Execution – Uses test scripts or frameworks to run predefined test cases.
@@ -181,13 +188,12 @@ Automated Testing Principles
 -- CI/CD Integration – Supports continuous testing in DevOps pipelines.
 
 When to Use Automated Testing
-1) Regression Testing – To check that new code changes don’t break existing functionality.
-2) Performance & Load Testing – To simulate multiple users or heavy loads.
-3) Frequent Code Changes – In Agile and DevOps environments where tests need to be run often.
-4) Large-Scale Applications – When manual testing is too time-consuming.
-5) Repetitive Tests – For tasks like login verification, form validation, or API testing.
 
-
+1. Regression Testing – To check that new code changes don’t break existing functionality.
+2. Performance & Load Testing – To simulate multiple users or heavy loads.
+3. Frequent Code Changes – In Agile and DevOps environments where tests need to be run often.
+4. Large-Scale Applications – When manual testing is too time-consuming.
+5. Repetitive Tests – For tasks like login verification, form validation, or API testing.
 
 ## Deployment
 
