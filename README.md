@@ -131,6 +131,12 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 - <div style="text-align:center">
   <img src="./assets/images//jshint validation.png" alt="image">
   </div>
+- Also, navigate to the file containing the javascript and run
+
+1.  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass,
+2.  jshint index.js
+
+- view the report in the terminal
 
 ## Manual Testing
 
