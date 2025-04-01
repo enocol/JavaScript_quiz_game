@@ -101,13 +101,14 @@ const questions = [
 ];
 // more questions can be added to the array; this is just a sample
 
-// app variables
+// app variables to store the current question index, score, and question number
 let currentQuestionIndex = 0;
 let score = 0;
 let questionNumber = 1;
 shuffleArray(questions);
 
-// Load Question Function
+// Load Question Function load the question and options
+// and shuffle the options
 function loadQuestion() {
   const app = document.getElementById("js-quiz");
   const question = questions[currentQuestionIndex];
@@ -135,7 +136,7 @@ function loadQuestion() {
       `;
 }
 
-// Start Game Function
+// Start Game Function starts the game and shuffles the questions
 function startGame() {
   const info = document.getElementById("info");
   const startButton = document.getElementById("start");
@@ -155,7 +156,8 @@ function startGame() {
   loadQuestion();
 }
 
-// Check Answer Function
+// Check Answer Function checks the selected answer and updates the score
+// and question number, and shows the explanation in a modal
 function checkAnswer(selected) {
   const question = questions[currentQuestionIndex];
   const correct = question.correct;
@@ -177,7 +179,7 @@ function checkAnswer(selected) {
   }
 }
 
-// Show Score Function
+// Show Score Function displays the final score and a restart button
 function showScore() {
   const startButton = document.getElementById("start");
   startButton.style.display = "none";
@@ -191,7 +193,8 @@ function showScore() {
     `;
 }
 
-// Show Modal Function
+// Show Modal Function displays the explanation in a modal
+// and highlights the correct answer if the answer is incorrect
 function showModal(isCorrect, explanation) {
   const question = questions[currentQuestionIndex];
   const modalTitle = document.getElementById("exampleModalLabel");
@@ -208,7 +211,8 @@ function showModal(isCorrect, explanation) {
   modal.show();
 }
 
-// Restart Game Function
+// Restart Game Function restarts the game and resets the score and question number
+// and shuffles the questions
 function restartGame() {
   shuffleArray(questions);
   currentQuestionIndex = 0;
