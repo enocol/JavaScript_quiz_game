@@ -126,11 +126,10 @@ Colors ( Goldenrod, blue and sky blue ) are chosen for a clean and simple websit
 
 ## Javascript validation
 
-- To test Javascript with a Linter, on your local terminal, type **npm run lint**
-  and your results should be similar to the imzge below
-
+- To test Javascript with a Jshint, Paste the javascript code in Jshint online tool
+  The result should as follows
 - <div style="text-align:center">
-  <img src="./assets/images/eslint.png" alt="image">
+  <img src="./assets/images//jshint validation.png" alt="image">
   </div>
 
 ## Manual Testing
