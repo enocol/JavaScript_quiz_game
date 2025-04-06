@@ -238,7 +238,15 @@ function restartGame() {
   loadQuestion();
 }
 
-module.exports = {
+window.startGame = startGame;
+window.checkAnswer = checkAnswer;
+window.restartGame = restartGame;
+window.showScore = showScore;
+window.showModal = showModal;
+window.shuffleArray = shuffleArray;
+window.loadQuestion = loadQuestion;
+
+export default {
   loadQuestion,
   shuffleArray,
   checkAnswer,

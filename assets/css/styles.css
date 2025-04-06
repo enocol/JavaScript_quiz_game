@@ -153,6 +153,16 @@ footer {
   font-size: 20px;
 }
 
+.socials i {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* media queries */
 
 @media (max-width: 768px) {

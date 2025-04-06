@@ -3,9 +3,24 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom",
+    "transform": {},
+    "testMatch": [
+      "**/?(*.)+(spec|test).[jt]s?(x)",
+      "**/*.mjs"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/eslint.config.mjs$"
+    ]
+  },
   "scripts": {
-    "test": "jest",
-    "lint": "npx eslint assets/js/ ||  'No javascript issues found!'"
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:watch": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "lint": "npx eslint assets/js/ ||  'No javascript issues found!'",
+    "start": "live-server"
   },
   "author": "Enoh",
   "license": "ISC",
@@ -15,8 +30,11 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
     "@eslint/js": "^9.22.0",
+    "cross-env": "^7.0.3",
     "eslint": "^9.22.0",
     "eslint-plugin-es": "^4.1.0",
-    "globals": "^16.0.0"
+    "globals": "^16.0.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "live-server": "^1.2.2"
   }
 }

@@ -24,6 +24,10 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <title>JavaScript Quiz</title>
   </head>
@@ -41,7 +45,7 @@
         type="button"
         id="start"
         class="btn btn-success startButton"
-        onclick="{startGame()}"
+        onclick="startGame()"
       >
         Start
       </button>
@@ -83,8 +87,8 @@
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="false"
     >
+      >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -111,7 +115,7 @@
       </div>
     </div>
 
-    <script src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
